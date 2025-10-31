@@ -18,15 +18,17 @@ body {
 }
 
 button {
-    background-color: #0078d7;
+    background-color: #6200ea;
     color: white;
     border: none;
     padding : 0.8rem 1.2rem;
     border-radius: 8px;
     cursor:pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #005ea0;
+    background-color: #3700b3;
+    transform : scale(1.05);
 }
