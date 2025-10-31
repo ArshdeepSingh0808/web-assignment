@@ -1,12 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
+    color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    transition : background-color 1s ease-in-out;
+    transition : background-color 0.7s ease , color 0.7s ease;
 }
 
 .container {
@@ -15,6 +16,12 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width : 90%;
+    max-width: 400px;
+}
+
+.button-group {
+    margin-bottom: 1rem;
 }
 
 button {
@@ -35,6 +42,34 @@ button:hover {
 
 button + button {
     margin-left: 10px;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark .container {
+    background: #1e1e1e;
+    box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+}
+
+body.dark button {
+    background-color: #03dac6;
+    color: #000;
+}
+
+body.dark button:hover {
+    background-color: #00c4b4;
+}
+
+.theme-btn {
+    margin-top: 1rem;
+    background-color: #ff9800;
+}
+
+body.dark .theme-btn {
+    background-color: #bb86fc ;
 }
 
 @media(max-width: 600px){
