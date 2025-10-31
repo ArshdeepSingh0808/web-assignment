@@ -32,3 +32,7 @@ button:hover {
     background-color: #3700b3;
     transform : scale(1.05);
 }
+
+button + button {
+    margin-left: 10px;
+}
